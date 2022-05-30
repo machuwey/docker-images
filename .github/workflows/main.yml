@@ -18,7 +18,7 @@ jobs:
     - name: Build image 
       run: | 
         ls
-        cd /OracleDatabase/SingleInstance/dockerfiles
+        cd ./OracleDatabase/SingleInstance/dockerfiles
         ./buildContainerImage.sh -v 21.3.0 -x
         
     - uses: azure/docker-login@v1
